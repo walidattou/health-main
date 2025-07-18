@@ -306,17 +306,7 @@ function setupForms() {
                         submitButton.classList.remove('loading');
                         submitButton.disabled = false;
                     }
-                    
-                    // Show success message
-                    const successMessage = document.createElement('div');
-                    successMessage.className = 'form-success-message';
-                    successMessage.textContent = 'Merci pour votre inscription !';
-                    
-                    form.appendChild(successMessage);
-                    
-                    setTimeout(() => {
-                        successMessage.remove();
-                    }, 5000);
+                    // Success message removed (no message will be shown)
                 }, 1500);
             }
         });
